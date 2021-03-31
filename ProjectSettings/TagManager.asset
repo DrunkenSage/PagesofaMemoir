@@ -43,12 +43,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Decorative
-    uniqueID: 2467182247
-    locked: 0
   - name: Housing
     uniqueID: 2931970533
     locked: 0
+  - name: Decorative
+    uniqueID: 2467182247
+    locked: 0
   - name: Player
     uniqueID: 1544824397
+    locked: 0
+  - name: Decorative2
+    uniqueID: 1858770017
+    locked: 0
+  - name: Decorative3
+    uniqueID: 68105351
     locked: 0
