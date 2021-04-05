@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class Map : MonoBehaviour
 {
    
-    GameObject mapButton;
+    public GameObject mapButton;
+    public GameObject map;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         mapButton.SetActive(true);
+        map.SetActive(false);
     }
 }
