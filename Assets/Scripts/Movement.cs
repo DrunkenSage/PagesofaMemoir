@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     public float Walkspeed = 5f;
     public float Runspeed = 8f;
-    public float speed = 5f;
+    public static float speed = 5f;
     bool isRunning = false;
     public Rigidbody2D rb;
     Vector2 move;
