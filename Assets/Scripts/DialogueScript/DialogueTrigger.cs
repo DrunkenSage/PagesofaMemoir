@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public _Dialogue dialogue;
+    public DialogueManager _manager;
 
     public void TriggerDialogue()
     {

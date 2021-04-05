@@ -7,6 +7,7 @@ public class Interact : MonoBehaviour
 {
     public Text interactWithMeText;
     public Transform player;
+    public GameObject npcChatBox;
     
 
 
@@ -29,7 +30,7 @@ public class Interact : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
        // Debug.Log("In Range");
         isNear = true;
@@ -40,18 +41,13 @@ public class Interact : MonoBehaviour
     {
         if (isNear)
         {
-            // Debug.Log("Interacting");
-            // if (player.GetComponent<FpsControllerLPFP>().keycardActive)
-            // {
-            //     Debug.Log("open says me");
-            //     openDoor.SetBool("character_nearby", true);
-            // }
+           npcChatBox.SetActive(true);
             
         }
         
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         isNear = false;
         //Debug.Log("Walked Away");
