@@ -15,6 +15,10 @@ public class DialogueManager : MonoBehaviour
     private GameObject skillbox;
     [SerializeField]
     private GameObject dialoguebox;
+    [SerializeField]
+    private GameObject dialoguebox2;
+    [SerializeField]
+    private GameObject dialoguebox3;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +59,8 @@ public class DialogueManager : MonoBehaviour
     {
         
        dialoguebox.SetActive(false);
+       dialoguebox2.SetActive(false);
+       dialoguebox3.SetActive(false);
       if(currentDialogue.HasSkillOn)
       {
           giveSkillOps();
